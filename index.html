@@ -1,9 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAYA • Catálogo Premium San Valentín</title>
+    
+    <!-- Meta tags SEO -->
+    <title>SAYA Pasteles • Edición San Valentín 2026 | Mini Pastelitos y Cupcakes Premium</title>
+    <meta name="description" content="Catálogo exclusivo de mini pastelitos y cupcakes premium para San Valentín 2026. Personalización completa, etiquetas personalizadas y entrega en CDMX.">
+    <meta name="keywords" content="SAYA Pasteles, mini pastelitos, cupcakes, San Valentín 2026, pasteles personalizados, etiquetas personalizadas, CDMX, regalos especiales">
+    <meta name="author" content="SAYA Pasteles">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sayapasteles.com/san-valentin-2026">
+    <meta property="og:title" content="SAYA Pasteles • Edición San Valentín 2026">
+    <meta property="og:description" content="Catálogo exclusivo de mini pastelitos y cupcakes premium para San Valentín 2026">
+    <meta property="og:image" content="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_logo.jpeg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sayapasteles.com/san-valentin-2026">
+    <meta property="twitter:title" content="SAYA Pasteles • Edición San Valentín 2026">
+    <meta property="twitter:description" content="Catálogo exclusivo de mini pastelitos y cupcakes premium para San Valentín 2026">
+    <meta property="twitter:image" content="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_logo.jpeg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_logo.jpeg">
     
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,24 +36,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     
     <style>
         :root {
-            --crema: #FAF7F2;
-            --beige: #F5F1EA;
-            --marron-oscuro: #2C2A26;
-            --marron-claro: #8B7355;
-            --dorado: #D4AF37;
-            --rosa-suave: #FFE8EC;
+            --lila-oscuro: #6A4C93;
+            --lila: #8B5FBF;
+            --lila-claro: #B39CD0;
+            --lila-suave: #E6E6FA;
+            --lila-fondo: #F8F7FF;
             --blanco: #FFFFFF;
-            --sombra-suave: 0 4px 24px rgba(44, 42, 38, 0.08);
-            --sombra-media: 0 8px 32px rgba(44, 42, 38, 0.12);
-            --radio-lg: 24px;
-            --radio-xl: 32px;
+            --texto-oscuro: #2D2B3D;
+            --texto-claro: #6D6B7D;
+            --dorado: #FFD700;
+            --rosa-suave: #FFB8E2;
+            --corazon-rosa: #FF6B9D;
+            --sombra-suave: 0 4px 20px rgba(107, 91, 149, 0.08);
+            --sombra-media: 0 8px 32px rgba(107, 91, 149, 0.12);
+            --sombra-intensa: 0 12px 48px rgba(107, 91, 149, 0.18);
+            --radio-lg: 20px;
+            --radio-xl: 28px;
+            --radio-full: 100px;
         }
 
         * {
@@ -44,27 +74,27 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--crema);
-            color: var(--marron-oscuro);
+            background-color: var(--lila-fondo);
+            color: var(--texto-oscuro);
             line-height: 1.6;
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4, h5, .font-serif {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 500;
-            letter-spacing: -0.02em;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: var(--lila-oscuro);
         }
 
-        /* Header minimalista */
+        /* Header elegante */
         .main-header {
             position: relative;
-            height: 100vh;
-            min-height: 700px;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--crema) 0%, var(--beige) 100%);
+            background: linear-gradient(135deg, var(--lila-fondo) 0%, var(--lila-suave) 100%);
+            padding: 4rem 2rem;
             overflow: hidden;
         }
 
@@ -73,136 +103,254 @@
             z-index: 10;
             text-align: center;
             max-width: 800px;
-            padding: 0 2rem;
         }
 
         .brand-logo {
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
-            color: var(--marron-oscuro);
-            opacity: 0.9;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            overflow: hidden;
+            background: var(--lila);
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--sombra-media);
+        }
+
+        .brand-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
         }
 
         .main-header h1 {
-            font-size: 4.5rem;
-            font-weight: 400;
-            margin-bottom: 1.5rem;
-            color: var(--marron-oscuro);
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--lila-oscuro) 0%, var(--lila) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             line-height: 1.1;
-        }
-
-        .main-header h1 span {
-            font-weight: 300;
-            font-style: italic;
         }
 
         .main-header .subtitle {
             font-size: 1.25rem;
-            font-weight: 300;
-            color: var(--marron-claro);
+            color: var(--texto-claro);
             margin-bottom: 3rem;
+            font-weight: 300;
             letter-spacing: 0.02em;
         }
 
         .date-badge {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            border: 1px solid rgba(139, 115, 85, 0.2);
-            border-radius: 100px;
-            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(139, 95, 191, 0.2);
+            border-radius: var(--radio-full);
+            font-size: 0.95rem;
             font-weight: 500;
-            letter-spacing: 0.05em;
-            color: var(--marron-claro);
-            background: rgba(255, 255, 255, 0.6);
+            color: var(--lila-oscuro);
             backdrop-filter: blur(10px);
+            box-shadow: var(--sombra-suave);
         }
 
-        /* Línea decorativa */
-        .decorative-line {
-            width: 1px;
-            height: 80px;
-            background: linear-gradient(to bottom, transparent, var(--marron-claro), transparent);
-            margin: 3rem auto;
+        .date-badge i {
+            color: var(--lila);
+        }
+
+        /* Decoración de partículas y corazones */
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .floating-element {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--lila-claro) 0%, var(--lila-suave) 100%);
+            opacity: 0.1;
+            filter: blur(20px);
+            animation: float 20s infinite linear;
+        }
+
+        .floating-heart {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: var(--corazon-rosa);
+            opacity: 0.4;
+            animation: floatHeart 25s infinite linear;
+            border-radius: 2px;
+        }
+
+        .floating-heart::before,
+        .floating-heart::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: var(--corazon-rosa);
+            border-radius: 50%;
+            top: -6px;
+            left: 0;
+        }
+
+        .floating-heart::after {
+            left: 6px;
+            top: 0;
+        }
+
+        .floating-heart.tiny {
+            width: 8px;
+            height: 8px;
             opacity: 0.3;
         }
 
-        /* Swiper minimalista */
+        .floating-heart.tiny::before,
+        .floating-heart.tiny::after {
+            width: 8px;
+            height: 8px;
+            top: -4px;
+        }
+
+        .floating-heart.tiny::after {
+            left: 4px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(100px, -50px) rotate(90deg); }
+            50% { transform: translate(50px, 100px) rotate(180deg); }
+            75% { transform: translate(-50px, 50px) rotate(270deg); }
+        }
+
+        @keyframes floatHeart {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.4;
+            }
+            50% {
+                transform: translateY(-30px) rotate(180deg);
+                opacity: 0.2;
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+                opacity: 0.4;
+            }
+        }
+
+        /* Swiper elegante */
         .swiper-container {
             width: 100%;
-            height: 500px;
+            height: 600px;
             border-radius: var(--radio-xl);
             overflow: hidden;
-            margin: 4rem 0;
+            margin: 6rem 0;
             position: relative;
+            box-shadow: var(--sombra-intensa);
         }
 
         .swiper-slide {
             position: relative;
             overflow: hidden;
+            cursor: pointer;
         }
 
         .swiper-slide img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 10s ease-out;
+            transition: transform 8s ease-out;
         }
 
         .swiper-slide:hover img {
-            transform: scale(1.05);
+            transform: scale(1.08);
         }
 
-        .slide-number {
+        .slide-content {
             position: absolute;
-            bottom: 2rem;
-            right: 2rem;
-            font-size: 0.9rem;
-            color: var(--blanco);
-            background: rgba(44, 42, 38, 0.4);
-            padding: 0.5rem 1rem;
-            border-radius: 100px;
-            backdrop-filter: blur(10px);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(42, 39, 61, 0.9), transparent);
+            color: white;
+            padding: 3rem;
+            transform: translateY(0);
+            transition: all 0.5s ease-out;
         }
 
-        /* Productos */
+        /* Sección productos */
         .products-section {
-            padding: 6rem 2rem;
+            padding: 8rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 4rem;
-            color: var(--marron-oscuro);
             position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .section-title::after {
             content: '';
             position: absolute;
-            bottom: -1rem;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
-            height: 1px;
-            background: var(--marron-claro);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, var(--lila), var(--rosa-suave));
+            border-radius: 3px;
         }
 
         .product-card {
             background: var(--blanco);
-            border-radius: var(--radio-lg);
-            padding: 2rem;
+            border-radius: var(--radio-xl);
+            padding: 2.5rem;
             margin-bottom: 2rem;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(139, 115, 85, 0.1);
+            border: 1px solid rgba(139, 95, 191, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--lila), var(--rosa-suave));
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
         .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--sombra-media);
-            border-color: rgba(139, 115, 85, 0.2);
+            transform: translateY(-12px);
+            box-shadow: var(--sombra-intensa);
+            border-color: var(--lila-claro);
+        }
+
+        .product-card:hover::before {
+            opacity: 1;
         }
 
         .product-header {
@@ -214,20 +362,37 @@
 
         .product-title {
             font-size: 1.8rem;
-            color: var(--marron-oscuro);
+            color: var(--lila-oscuro);
             margin-bottom: 0.5rem;
         }
 
         .product-price {
-            font-size: 2rem;
-            font-weight: 600;
-            color: var(--marron-oscuro);
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--lila);
+            background: linear-gradient(135deg, var(--lila) 0%, var(--lila-oscuro) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .product-price small {
             font-size: 1rem;
-            color: var(--marron-claro);
+            color: var(--texto-claro);
             font-weight: 400;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: var(--radio-lg);
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .product-image:hover {
+            transform: scale(1.02);
         }
 
         .product-details {
@@ -238,47 +403,103 @@
             display: flex;
             align-items: flex-start;
             margin-bottom: 0.8rem;
-            color: var(--marron-claro);
+            color: var(--texto-claro);
         }
 
         .detail-icon {
-            margin-right: 0.8rem;
-            color: var(--marron-claro);
-            font-size: 0.9rem;
-            margin-top: 0.2rem;
+            width: 24px;
+            height: 24px;
+            background: var(--lila-suave);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--lila);
+            font-size: 0.8rem;
+            flex-shrink: 0;
         }
 
-        /* Botones minimalistas */
-        .btn-minimal {
-            background: var(--marron-oscuro);
+        /* Etiquetas personalizadas gallery */
+        .etiquetas-section {
+            padding: 5rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .etiquetas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .etiqueta-item {
+            border-radius: var(--radio-lg);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(139, 95, 191, 0.1);
+        }
+
+        .etiqueta-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--sombra-media);
+        }
+
+        .etiqueta-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        /* Botones elegantes */
+        .btn-elegant {
+            background: linear-gradient(135deg, var(--lila) 0%, var(--lila-oscuro) 100%);
             color: var(--blanco);
             border: none;
-            border-radius: 100px;
+            border-radius: var(--radio-full);
             padding: 1rem 2rem;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             font-weight: 500;
-            letter-spacing: 0.02em;
             cursor: pointer;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
+            gap: 0.8rem;
+            position: relative;
+            overflow: hidden;
         }
 
-        .btn-minimal:hover {
-            background: var(--marron-claro);
-            transform: translateY(-2px);
+        .btn-elegant::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s;
         }
 
-        .btn-minimal-outline {
+        .btn-elegant:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--sombra-media);
+        }
+
+        .btn-elegant:hover::before {
+            left: 100%;
+        }
+
+        .btn-elegant-outline {
             background: transparent;
-            color: var(--marron-oscuro);
-            border: 1px solid var(--marron-claro);
+            color: var(--lila-oscuro);
+            border: 2px solid var(--lila);
         }
 
-        .btn-minimal-outline:hover {
-            background: var(--marron-oscuro);
+        .btn-elegant-outline:hover {
+            background: linear-gradient(135deg, var(--lila) 0%, var(--lila-oscuro) 100%);
             color: var(--blanco);
         }
 
@@ -292,32 +513,51 @@
         .flavors-section {
             background: var(--blanco);
             border-radius: var(--radio-xl);
-            padding: 4rem;
-            margin: 4rem auto;
+            padding: 5rem;
+            margin: 6rem auto;
             max-width: 1000px;
-            border: 1px solid rgba(139, 115, 85, 0.1);
+            box-shadow: var(--sombra-media);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .flavors-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--lila), var(--rosa-suave));
         }
 
         .flavors-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
 
         .flavor-category {
-            padding: 1.5rem;
+            padding: 2rem;
             border-radius: var(--radio-lg);
-            background: var(--crema);
+            background: var(--lila-fondo);
+            border: 1px solid rgba(139, 95, 191, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .flavor-category:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--sombra-suave);
         }
 
         .flavor-category h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--marron-oscuro);
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.8rem;
+            color: var(--lila-oscuro);
         }
 
         .flavor-list {
@@ -325,202 +565,345 @@
         }
 
         .flavor-list li {
-            padding: 0.5rem 0;
-            color: var(--marron-claro);
-            border-bottom: 1px solid rgba(139, 115, 85, 0.1);
+            padding: 0.8rem 0;
+            color: var(--texto-claro);
+            border-bottom: 1px solid rgba(139, 95, 191, 0.1);
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.8rem;
         }
 
         .flavor-list li:last-child {
             border-bottom: none;
         }
 
-        .flavor-list li i {
-            font-size: 0.8rem;
+        .extra-cost {
+            font-size: 0.85rem;
+            color: var(--lila);
+            font-weight: 500;
         }
 
         /* WhatsApp flotante */
         .whatsapp-float {
             position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 56px;
-            height: 56px;
+            bottom: 2.5rem;
+            right: 2.5rem;
+            width: 60px;
+            height: 60px;
             background: #25D366;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 1.5rem;
-            box-shadow: var(--sombra-media);
+            font-size: 1.6rem;
+            box-shadow: var(--sombra-intensa);
             z-index: 1000;
             transition: all 0.3s ease;
             text-decoration: none;
         }
 
         .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.3);
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
         }
 
-        /* Modal minimalista */
-        .modal-minimal .modal-content {
+        /* Sistema de Toast */
+        .toast-container {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            z-index: 9999;
+        }
+
+        .toast {
+            background: var(--blanco);
+            border-radius: var(--radio-lg);
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--sombra-intensa);
+            border-left: 4px solid var(--lila);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transform: translateX(400px);
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            min-width: 300px;
+            max-width: 400px;
+        }
+
+        .toast.show {
+            transform: translateX(0);
+        }
+
+        .toast-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .toast-success .toast-icon {
+            background: rgba(37, 211, 102, 0.1);
+            color: #25D366;
+        }
+
+        .toast-info .toast-icon {
+            background: rgba(107, 91, 149, 0.1);
+            color: var(--lila);
+        }
+
+        .toast-error .toast-icon {
+            background: rgba(255, 77, 79, 0.1);
+            color: #FF4D4F;
+        }
+
+        .toast-content {
+            flex-grow: 1;
+        }
+
+        .toast-title {
+            font-weight: 600;
+            color: var(--texto-oscuro);
+            margin-bottom: 0.2rem;
+        }
+
+        .toast-message {
+            font-size: 0.9rem;
+            color: var(--texto-claro);
+        }
+
+        .toast-close {
+            background: none;
+            border: none;
+            color: var(--texto-claro);
+            cursor: pointer;
+            font-size: 1rem;
+            opacity: 0.5;
+            transition: opacity 0.2s;
+        }
+
+        .toast-close:hover {
+            opacity: 1;
+        }
+
+        /* Modal elegante */
+        .modal-elegant .modal-content {
             border-radius: var(--radio-xl);
             border: none;
             background: var(--blanco);
+            box-shadow: var(--sombra-intensa);
         }
 
-        .modal-minimal .modal-header {
-            border-bottom: 1px solid rgba(139, 115, 85, 0.1);
+        .modal-elegant .modal-header {
+            border-bottom: 1px solid rgba(139, 95, 191, 0.1);
             padding: 2rem 2rem 1rem;
         }
 
-        .modal-minimal .modal-title {
-            font-size: 1.5rem;
-            color: var(--marron-oscuro);
+        .modal-elegant .modal-title {
+            font-size: 1.6rem;
+            color: var(--lila-oscuro);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
         }
 
-        .modal-minimal .modal-body {
+        .modal-elegant .modal-body {
             padding: 2rem;
         }
 
-        .modal-minimal .modal-footer {
-            border-top: 1px solid rgba(139, 115, 85, 0.1);
-            padding: 1rem 2rem;
+        .modal-elegant .modal-footer {
+            border-top: 1px solid rgba(139, 95, 191, 0.1);
+            padding: 1.5rem 2rem;
+        }
+
+        /* Modal de imagen grande */
+        .modal-image .modal-content {
+            background: transparent;
+            border: none;
+        }
+
+        .modal-image .modal-body {
+            padding: 0;
+        }
+
+        .modal-image img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radio-lg);
+        }
+
+        .modal-image .btn-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
         }
 
         /* Formulario */
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
         }
 
         .form-label {
             display: block;
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
+            margin-bottom: 0.6rem;
+            font-size: 0.95rem;
             font-weight: 500;
-            color: var(--marron-oscuro);
+            color: var(--lila-oscuro);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .form-control {
             width: 100%;
-            padding: 0.8rem 1rem;
-            border: 1px solid rgba(139, 115, 85, 0.2);
+            padding: 1rem 1.2rem;
+            border: 2px solid rgba(139, 95, 191, 0.2);
             border-radius: var(--radio-lg);
-            background: var(--crema);
+            background: var(--lila-fondo);
             font-family: 'Inter', sans-serif;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            color: var(--texto-oscuro);
             transition: all 0.3s ease;
         }
 
         .form-control:focus {
             outline: none;
-            border-color: var(--marron-claro);
+            border-color: var(--lila);
             background: var(--blanco);
+            box-shadow: 0 0 0 3px rgba(139, 95, 191, 0.1);
         }
 
         .select-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 0.8rem;
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            gap: 1rem;
         }
 
         .select-option {
-            padding: 0.8rem;
-            border: 1px solid rgba(139, 115, 85, 0.2);
+            padding: 1rem;
+            border: 2px solid rgba(139, 95, 191, 0.2);
             border-radius: var(--radio-lg);
-            background: var(--crema);
+            background: var(--lila-fondo);
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
             font-size: 0.9rem;
+            color: var(--texto-oscuro);
         }
 
         .select-option:hover {
-            border-color: var(--marron-claro);
+            border-color: var(--lila);
             background: var(--blanco);
+            transform: translateY(-2px);
         }
 
         .select-option.selected {
-            border-color: var(--marron-oscuro);
-            background: var(--marron-oscuro);
-            color: var(--blanco);
+            border-color: var(--lila);
+            background: linear-gradient(135deg, var(--lila-suave) 0%, var(--lila-fondo) 100%);
+            color: var(--lila-oscuro);
+            font-weight: 500;
+            box-shadow: var(--sombra-suave);
         }
 
         /* Footer */
         .footer {
-            padding: 4rem 2rem;
+            padding: 5rem 2rem;
             text-align: center;
-            color: var(--marron-claro);
-            font-size: 0.9rem;
-            border-top: 1px solid rgba(139, 115, 85, 0.1);
-            margin-top: 4rem;
+            color: var(--texto-claro);
+            background: linear-gradient(135deg, var(--lila-oscuro) 0%, var(--lila) 100%);
+            color: white;
+            margin-top: 6rem;
         }
 
         .footer-brand {
-            font-size: 1.2rem;
-            color: var(--marron-oscuro);
-            margin-bottom: 1rem;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
         }
 
-        /* Animaciones sutiles */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in {
-            animation: fadeInUp 0.6s ease-out forwards;
+        .footer-text {
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto 2rem;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             .main-header h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
+            }
+            
+            .brand-logo {
+                width: 80px;
+                height: 80px;
             }
             
             .swiper-container {
-                height: 300px;
+                height: 400px;
+                margin: 4rem 0;
             }
             
             .products-section {
-                padding: 3rem 1rem;
+                padding: 4rem 1rem;
             }
             
             .flavors-section {
-                padding: 2rem;
+                padding: 3rem 1.5rem;
             }
             
             .btn-group {
                 flex-direction: column;
             }
             
-            .btn-group .btn-minimal {
-                width: 100%;
+            .flavors-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .etiquetas-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            }
+            
+            .modal-elegant .modal-dialog {
+                margin: 1rem;
             }
         }
     </style>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/Bakery">
+    <!-- Sistema de Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
     <!-- Header -->
     <header class="main-header">
+        <div class="floating-elements" id="floatingElements"></div>
+        
         <div class="header-content">
             <div class="brand-logo">
-                <i class="fas fa-crown"></i>
+                <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_logo.jpeg" 
+                     alt="SAYA Pasteles Logo" 
+                     onerror="this.src='https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_A.jpeg'"
+                     itemprop="logo">
             </div>
-            <h1>SAYA<br><span>Pastelería de Autor</span></h1>
-            <p class="subtitle">Edición Especial • San Valentín 2026</p>
-            <div class="date-badge">RESERVAS LIMITADAS • 14 FEBRERO</div>
-            <div class="decorative-line"></div>
+            <h1 itemprop="name">SAYA PASTELES</h1>
+            <p class="subtitle" itemprop="description">Creaciones artesanales para momentos especiales • Edición San Valentín 2026</p>
+            <div class="date-badge">
+                <i class="fas fa-calendar-alt"></i>
+                <span>RESERVAS LIMITADAS • 14 FEBRERO</span>
+            </div>
         </div>
     </header>
 
@@ -528,95 +911,148 @@
     <div class="container">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1600&q=80" alt="Pastelitos Decorados">
-                    <div class="slide-number">01</div>
+                <div class="swiper-slide" onclick="openImageModal('https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_A.jpeg')">
+                    <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_A.jpeg" 
+                         alt="Mini Pastel con Etiqueta Personalizada SAYA Pasteles" 
+                         onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1080&q=80'"
+                         itemprop="image">
+                    <div class="slide-content">
+                        <h3>Mini Pastelitos Premium</h3>
+                        <p>Decoración premium con etiqueta personalizada incluida</p>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1596223575327-99a5d1d6f5bb?auto=format&fit=crop&w=1600&q=80" alt="Cupcakes de Lujo">
-                    <div class="slide-number">02</div>
+                <div class="swiper-slide" onclick="openImageModal('https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_C.jpeg')">
+                    <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_C.jpeg" 
+                         alt="Mini Pastelito en Forma de Corazón SAYA Pasteles" 
+                         onerror="this.src='https://images.unsplash.com/photo-1596223575327-99a5d1d6f5bb?auto=format&fit=crop&w=1600&q=80'"
+                         itemprop="image">
+                    <div class="slide-content">
+                        <h3>Pastelito Corazón</h3>
+                        <p>Forma especial de corazón para San Valentín</p>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=1600&q=80" alt="Detalles Artesanales">
-                    <div class="slide-number">03</div>
+                <div class="swiper-slide" onclick="openImageModal('https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_D.jpeg')">
+                    <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_D.jpeg" 
+                         alt="Mini Pastelito en Cajita SAYA Pasteles" 
+                         onerror="this.src='https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=1600&q=80'"
+                         itemprop="image">
+                    <div class="slide-content">
+                        <h3>Presentación Premium</h3>
+                        <p>Empaque premium con cajita y etiqueta personalizada</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" onclick="openImageModal('https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_M.jpeg')">
+                    <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_M.jpeg" 
+                         alt="Cupcakes SAYA Pasteles" 
+                         onerror="this.src='https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1080&q=80'"
+                         itemprop="image">
+                    <div class="slide-content">
+                        <h3>Cupcakes Elegantes</h3>
+                        <p>Decoración artesanal y personalización completa</p>
+                    </div>
                 </div>
             </div>
+            <!-- Navigation removed as requested -->
         </div>
     </div>
 
     <!-- Productos -->
-    <section class="products-section fade-in">
-        <h2 class="section-title">Colección Especial</h2>
+    <section class="products-section">
+        <h2 class="section-title">Nuestra Colección</h2>
         
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <!-- Producto 1 -->
-                    <div class="product-card fade-in">
+                    <div class="product-card" itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer">
+                        <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_A.jpeg" 
+                             alt="Mini Pastelitos SAYA Pasteles" 
+                             class="product-image"
+                             onclick="openImageModal('https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_A.jpeg')"
+                             onerror="this.src='https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_B.jpeg'"
+                             itemprop="image">
                         <div class="product-header">
                             <div>
-                                <h3 class="product-title">Mini Pastelitos</h3>
-                                <p class="text-muted">Edición limitada • Diámetro 9cm</p>
+                                <h3 class="product-title" itemprop="name">Mini Pastelitos</h3>
+                                <p style="color: var(--texto-claro); font-size: 0.95rem;">Diámetro 9cm • Decoración premium</p>
                             </div>
-                            <div class="product-price">$65</div>
+                            <div class="product-price" itemprop="price" content="65">$65<span itemprop="priceCurrency" content="MXN"></span></div>
                         </div>
                         
                         <div class="product-details">
                             <div class="detail-item">
-                                <i class="fas fa-gem detail-icon"></i>
-                                <span>Decoración con oro comestible y perlas</span>
+                                <div class="detail-icon">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <span>Oro comestible, perlas y diamantina premium</span>
                             </div>
                             <div class="detail-item">
-                                <i class="fas fa-palette detail-icon"></i>
-                                <span>Fondant premium en colores a elección</span>
+                                <div class="detail-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <span>Fondant suave en colores a elección</span>
                             </div>
                             <div class="detail-item">
-                                <i class="fas fa-image detail-icon"></i>
-                                <span>Imagen personalizable (+$10 extra)</span>
+                                <div class="detail-icon">
+                                    <i class="fas fa-tag"></i>
+                                </div>
+                                <span>Etiqueta personalizada incluida</span>
                             </div>
                         </div>
                         
                         <div class="btn-group">
-                            <button class="btn-minimal" onclick="openProductModal('pastelitos')">
+                            <button class="btn-elegant" onclick="openProductModal('pastelitos')">
                                 <i class="fas fa-eye"></i> Ver detalles
                             </button>
-                            <button class="btn-minimal btn-minimal-outline" onclick="startOrder('pastelitos')">
-                                <i class="fas fa-shopping-cart"></i> Ordenar
+                            <button class="btn-elegant btn-elegant-outline" onclick="startOrder('pastelitos')">
+                                <i class="fas fa-shopping-cart"></i> Ordenar ahora
                             </button>
                         </div>
                     </div>
                     
                     <!-- Producto 2 -->
-                    <div class="product-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="product-card" itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer">
+                        <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_M.jpeg" 
+                             alt="Cupcakes Premium SAYA Pasteles" 
+                             class="product-image"
+                             onclick="openImageModal('https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_M.jpeg')"
+                             onerror="this.src='https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_O.jpeg'"
+                             itemprop="image">
                         <div class="product-header">
                             <div>
-                                <h3 class="product-title">Cupcakes Premium</h3>
-                                <p class="text-muted">Personalización completa</p>
+                                <h3 class="product-title" itemprop="name">Cupcakes Premium</h3>
+                                <p style="color: var(--texto-claro); font-size: 0.95rem;">Personalización completa • Incluye imagen</p>
                             </div>
-                            <div class="product-price">$100<small>/ $125 con relleno e imagen</small></div>
+                            <div class="product-price" itemprop="price" content="100">$100<small>/ $125 premium</small><span itemprop="priceCurrency" content="MXN"></span></div>
                         </div>
                         
                         <div class="product-details">
                             <div class="detail-item">
-                                <i class="fas fa-crown detail-icon"></i>
+                                <div class="detail-icon">
+                                    <i class="fas fa-crown"></i>
+                                </div>
                                 <span>Diseño totalmente personalizable</span>
                             </div>
                             <div class="detail-item">
-                                <i class="fas fa-heart detail-icon"></i>
+                                <div class="detail-icon">
+                                    <i class="fas fa-image"></i>
+                                </div>
                                 <span>Imagen comestible incluida en versión premium</span>
                             </div>
                             <div class="detail-item">
-                                <i class="fas fa-star detail-icon"></i>
+                                <div class="detail-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
                                 <span>Rellenos gourmet a elección</span>
                             </div>
                         </div>
                         
                         <div class="btn-group">
-                            <button class="btn-minimal" onclick="openProductModal('cupcakes')">
+                            <button class="btn-elegant" onclick="openProductModal('cupcakes')">
                                 <i class="fas fa-eye"></i> Ver detalles
                             </button>
-                            <button class="btn-minimal btn-minimal-outline" onclick="startOrder('cupcakes')">
-                                <i class="fas fa-shopping-cart"></i> Ordenar
+                            <button class="btn-elegant btn-elegant-outline" onclick="startOrder('cupcakes')">
+                                <i class="fas fa-shopping-cart"></i> Ordenar ahora
                             </button>
                         </div>
                     </div>
@@ -625,119 +1061,200 @@
         </div>
     </section>
 
+    <!-- Galería de Etiquetas Personalizadas -->
+    <section class="etiquetas-section">
+        <h3 class="text-center mb-4" style="font-size: 2.2rem; color: var(--lila-oscuro);">Etiquetas Personalizadas</h3>
+        <p class="text-center mb-5" style="color: var(--texto-claro); max-width: 600px; margin: 0 auto;">
+            Selecciona entre nuestros diseños de etiquetas personalizadas para tu pedido especial
+        </p>
+        
+        <div class="etiquetas-grid">
+            <div class="etiqueta-item" onclick="openImageModal('https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_F.jpeg')">
+                <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_F.jpeg" 
+                     alt="Etiqueta Personalizada 1 SAYA Pasteles"
+                     onerror="this.src='https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_A.jpeg'">
+            </div>
+            <div class="etiqueta-item" onclick="openImageModal('https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_G.jpeg')">
+                <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_G.jpeg" 
+                     alt="Etiqueta Personalizada 2 SAYA Pasteles"
+                     onerror="this.src='https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_A.jpeg'">
+            </div>
+            <div class="etiqueta-item" onclick="openImageModal('https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_H.jpeg')">
+                <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_H.jpeg" 
+                     alt="Etiqueta Personalizada 3 SAYA Pasteles"
+                     onerror="this.src='https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_A.jpeg'">
+            </div>
+            <div class="etiqueta-item" onclick="openImageModal('https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_I.jpeg')">
+                <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_I.jpeg" 
+                     alt="Etiqueta Personalizada 4 SAYA Pasteles"
+                     onerror="this.src='https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_A.jpeg'">
+            </div>
+            <div class="etiqueta-item" onclick="openImageModal('https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_K.jpeg')">
+                <img src="https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_K.jpeg" 
+                     alt="Etiqueta Personalizada 5 SAYA Pasteles"
+                     onerror="this.src='https://cdn.runapp.run/uploads/avatars/326xba967354609583f61cdb7e39b1789e4b_A.jpeg'">
+            </div>
+        </div>
+    </section>
+
     <!-- Sabores y Rellenos -->
-    <section class="flavors-section fade-in">
-        <h3 class="text-center mb-4" style="font-size: 1.8rem; color: var(--marron-oscuro);">
-            <i class="fas fa-utensils me-2"></i>Sabores y Rellenos
-        </h3>
+    <section class="flavors-section">
+        <h3 class="text-center mb-4" style="font-size: 2.2rem;">Sabores & Rellenos</h3>
+        <p class="text-center mb-5" style="color: var(--texto-claro); max-width: 600px; margin: 0 auto;">
+            Selecciona entre nuestra variedad de bases y rellenos para crear tu combinación perfecta
+        </p>
         
         <div class="flavors-grid">
             <div class="flavor-category">
-                <h4><i class="fas fa-ice-cream"></i> Bases</h4>
+                <h4><i class="fas fa-ice-cream"></i> Sabores Base</h4>
                 <ul class="flavor-list">
-                    <li><i class="fas fa-check"></i> Chocolate Belga</li>
-                    <li><i class="fas fa-check"></i> Vainilla Madagascar</li>
-                    <li><i class="fas fa-check"></i> Chocovainilla</li>
-                    <li><i class="fas fa-plus"></i> Fresa / Red velvet (+$5)</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Chocolate Belga</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Vainilla Madagascar</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Chocovainilla</li>
+                    <li><i class="fas fa-plus" style="color: var(--rosa-suave);"></i> Fresa <span class="extra-cost">+ $5</span></li>
+                    <li><i class="fas fa-plus" style="color: var(--rosa-suave);"></i> Red velvet <span class="extra-cost">+ $5</span></li>
                 </ul>
             </div>
             
             <div class="flavor-category">
                 <h4><i class="fas fa-fill-drip"></i> Rellenos</h4>
                 <ul class="flavor-list">
-                    <li><i class="fas fa-check"></i> Durazno</li>
-                    <li><i class="fas fa-check"></i> Dulce de leche</li>
-                    <li><i class="fas fa-check"></i> Nuez</li>
-                    <li><i class="fas fa-check"></i> Fresa</li>
-                    <li><i class="fas fa-check"></i> Chispas chocolate</li>
-                    <li><i class="fas fa-plus"></i> Crema avellanas (+$8)</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Durazno</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Dulce de leche</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Nuez</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Fresa</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Chispas chocolate</li>
+                    <li><i class="fas fa-plus" style="color: var(--rosa-suave);"></i> Crema avellanas <span class="extra-cost">+ $8</span></li>
                 </ul>
             </div>
             
             <div class="flavor-category">
                 <h4><i class="fas fa-gift"></i> Incluido</h4>
                 <ul class="flavor-list">
-                    <li><i class="fas fa-check"></i> Etiqueta personalizada</li>
-                    <li><i class="fas fa-check"></i> Empaque premium</li>
-                    <li><i class="fas fa-check"></i> Caja de regalo</li>
-                    <li><i class="fas fa-check"></i> Moño satinado</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Etiqueta personalizada</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Empaque premium</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Caja de regalo</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Moño satinado</li>
+                    <li><i class="fas fa-check" style="color: var(--lila);"></i> Tarjeta personal</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <!-- WhatsApp Flotante -->
-    <a href="#" class="whatsapp-float" id="whatsappButton">
+    <a href="#" class="whatsapp-float" id="whatsappButton" aria-label="Contactar por WhatsApp SAYA Pasteles">
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Modal de Imagen -->
+    <div class="modal fade modal-image" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img id="modalImage" src="" alt="Imagen ampliada SAYA Pasteles" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal de Pedido -->
-    <div class="modal fade modal-minimal" id="orderModal" tabindex="-1" aria-hidden="true">
+    <div class="modal fade modal-elegant" id="orderModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitle">Realizar Pedido</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="modalTitle">Realizar Pedido</span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <form id="orderForm">
-                        <!-- Producto -->
                         <div class="form-group">
-                            <label class="form-label">Producto</label>
+                            <label class="form-label">
+                                <i class="fas fa-box"></i>
+                                Producto
+                            </label>
                             <input type="text" class="form-control" id="productName" readonly>
                         </div>
                         
-                        <!-- Sabor -->
                         <div class="form-group">
-                            <label class="form-label">Sabor</label>
+                            <label class="form-label">
+                                <i class="fas fa-ice-cream"></i>
+                                Sabor
+                            </label>
                             <div class="select-grid" id="flavorOptions"></div>
                         </div>
                         
-                        <!-- Relleno -->
                         <div class="form-group">
-                            <label class="form-label">Relleno</label>
+                            <label class="form-label">
+                                <i class="fas fa-fill-drip"></i>
+                                Relleno
+                            </label>
                             <div class="select-grid" id="fillingOptions"></div>
                         </div>
                         
-                        <!-- Cantidad -->
                         <div class="form-group">
-                            <label class="form-label">Cantidad</label>
+                            <label class="form-label">
+                                <i class="fas fa-hashtag"></i>
+                                Cantidad
+                            </label>
                             <div class="d-flex align-items-center gap-3">
-                                <button type="button" class="btn-minimal btn-minimal-outline" onclick="changeQuantity(-1)" style="padding: 0.5rem 1rem;">-</button>
-                                <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="20" style="max-width: 80px;">
-                                <button type="button" class="btn-minimal btn-minimal-outline" onclick="changeQuantity(1)" style="padding: 0.5rem 1rem;">+</button>
+                                <button type="button" class="btn-elegant btn-elegant-outline" onclick="changeQuantity(-1)" style="padding: 0.6rem 1.2rem;" aria-label="Disminuir cantidad">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="20" style="max-width: 100px;" aria-label="Cantidad de productos">
+                                <button type="button" class="btn-elegant btn-elegant-outline" onclick="changeQuantity(1)" style="padding: 0.6rem 1.2rem;" aria-label="Aumentar cantidad">
+                                    <i class="fas fa-plus"></i>
+                                </button>
                             </div>
                         </div>
                         
-                        <!-- Fecha -->
                         <div class="form-group">
-                            <label class="form-label">Fecha de entrega</label>
+                            <label class="form-label">
+                                <i class="fas fa-calendar-alt"></i>
+                                Fecha de entrega
+                            </label>
                             <input type="date" class="form-control" id="deliveryDate" required>
                         </div>
                         
-                        <!-- Datos personales -->
-                        <div class="form-group">
-                            <label class="form-label">Nombre completo</label>
-                            <input type="text" class="form-control" id="customerName" required>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <i class="fas fa-user"></i>
+                                        Nombre
+                                    </label>
+                                    <input type="text" class="form-control" id="customerName" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <i class="fas fa-phone"></i>
+                                        Teléfono
+                                    </label>
+                                    <input type="tel" class="form-control" id="customerPhone" required>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label">Teléfono</label>
-                            <input type="tel" class="form-control" id="customerPhone" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">Mensaje especial (opcional)</label>
+                            <label class="form-label">
+                                <i class="fas fa-comment-alt"></i>
+                                Mensaje especial (opcional)
+                            </label>
                             <textarea class="form-control" id="personalMessage" rows="3" placeholder="Escribe un mensaje para incluir en la etiqueta..."></textarea>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn-minimal btn-minimal-outline" data-bs-dismiss="modal">
+                    <button type="button" class="btn-elegant btn-elegant-outline" data-bs-dismiss="modal">
                         <i class="fas fa-times"></i> Cancelar
                     </button>
-                    <button type="button" class="btn-minimal" onclick="submitOrder()" style="background: #25D366;">
-                        <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                    <button type="button" class="btn-elegant" onclick="submitOrder()" style="background: #25D366;">
+                        <i class="fab fa-whatsapp"></i> Enviar pedido
                     </button>
                 </div>
             </div>
@@ -745,12 +1262,16 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" itemscope itemtype="https://schema.org/Bakery">
         <div class="container">
-            <div class="footer-brand">SAYA</div>
-            <p>Pastelería de autor • Elaboraciones artesanales</p>
+            <div class="footer-brand" itemprop="name">SAYA PASTELES</div>
+            <p class="footer-text" itemprop="description">Creaciones artesanales elaboradas con ingredientes premium y dedicación</p>
             <p>Edición Especial San Valentín 2026</p>
-            <p class="mt-3" style="font-size: 0.8rem; opacity: 0.7;">Pedidos con 72 horas de anticipación • Cupos limitados</p>
+            <p class="mt-4" style="opacity: 0.6; font-size: 0.9rem;">
+                Pedidos con mínimo 72 horas de anticipación • Cupos limitados • Entrega en CDMX y área metropolitana
+            </p>
+            <meta itemprop="openingHours" content="Mo-Su 09:00-20:00">
+            <meta itemprop="telephone" content="+525513581184">
         </div>
     </footer>
 
@@ -759,23 +1280,86 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        // Inicializar Swiper
+        // Inicializar Swiper sin flechas de navegación
         const swiper = new Swiper('.swiper-container', {
             loop: true,
-            speed: 800,
+            speed: 1000,
             autoplay: {
-                delay: 4000,
+                delay: 5000,
                 disableOnInteraction: false,
             },
             effect: 'fade',
             fadeEffect: {
                 crossFade: true
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+            // Navigation removed as requested
         });
+
+        // Crear elementos flotantes y corazones
+        function createFloatingElements() {
+            const container = document.getElementById('floatingElements');
+            
+            // Crear elementos flotantes originales
+            for (let i = 0; i < 8; i++) {
+                const element = document.createElement('div');
+                element.className = 'floating-element';
+                element.style.width = Math.random() * 80 + 40 + 'px';
+                element.style.height = element.style.width;
+                element.style.left = Math.random() * 100 + '%';
+                element.style.top = Math.random() * 100 + '%';
+                element.style.animationDelay = Math.random() * 20 + 's';
+                element.style.animationDuration = Math.random() * 30 + 30 + 's';
+                container.appendChild(element);
+            }
+            
+            // Crear corazones flotantes
+            for (let i = 0; i < 20; i++) {
+                const heart = document.createElement('div');
+                heart.className = Math.random() > 0.5 ? 'floating-heart' : 'floating-heart tiny';
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.top = Math.random() * 100 + '%';
+                heart.style.animationDelay = Math.random() * 15 + 's';
+                heart.style.animationDuration = Math.random() * 20 + 20 + 's';
+                heart.style.opacity = Math.random() * 0.3 + 0.1;
+                container.appendChild(heart);
+            }
+        }
+
+        // Sistema de Toast
+        class ToastSystem {
+            static showToast(type, title, message, duration = 5000) {
+                const container = document.getElementById('toastContainer');
+                const toast = document.createElement('div');
+                toast.className = `toast toast-${type}`;
+                toast.innerHTML = `
+                    <div class="toast-icon">
+                        <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
+                    </div>
+                    <div class="toast-content">
+                        <div class="toast-title">${title}</div>
+                        <div class="toast-message">${message}</div>
+                    </div>
+                    <button class="toast-close" onclick="this.parentElement.remove()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+                
+                container.appendChild(toast);
+                
+                // Animación de entrada
+                setTimeout(() => toast.classList.add('show'), 10);
+                
+                // Auto remover
+                if (duration > 0) {
+                    setTimeout(() => {
+                        toast.classList.remove('show');
+                        setTimeout(() => toast.remove(), 400);
+                    }, duration);
+                }
+                
+                return toast;
+            }
+        }
 
         // Datos de productos
         const products = {
@@ -787,8 +1371,8 @@
                     "Chocolate Belga",
                     "Vainilla Madagascar", 
                     "Chocovainilla",
-                    "Fresa (+$5)",
-                    "Red velvet (+$5)"
+                    "Fresa (+ $5)",
+                    "Red velvet (+ $5)"
                 ],
                 fillings: [
                     "Durazno",
@@ -796,16 +1380,7 @@
                     "Nuez",
                     "Fresa",
                     "Chispas chocolate",
-                    "Crema avellanas (+$8)"
-                ],
-                details: [
-                    "Decoración con oro comestible 24K",
-                    "Perlas comestibles brillantes",
-                    "Diamantina comestible premium",
-                    "Fondant suave en colores a elección",
-                    "Imagen personalizable (+$10)",
-                    "Diámetro 9 cm - Porción perfecta",
-                    "Empaque individual de lujo incluido"
+                    "Crema avellanas (+ $8)"
                 ]
             },
             cupcakes: {
@@ -817,8 +1392,8 @@
                     "Chocolate Belga",
                     "Vainilla Madagascar",
                     "Chocovainilla",
-                    "Fresa (+$5)",
-                    "Red velvet (+$5)"
+                    "Fresa (+ $5)",
+                    "Red velvet (+ $5)"
                 ],
                 fillings: [
                     "Durazno",
@@ -826,16 +1401,7 @@
                     "Nuez caramelizada",
                     "Coulis de fresa",
                     "Chispas Valrhona",
-                    "Crema avellanas (+$8)"
-                ],
-                details: [
-                    "Diseño totalmente personalizable",
-                    "Imagen comestible incluida en premium",
-                    "Buttercream premium manteca belga",
-                    "Decoración elementos comestibles lujo",
-                    "Caja individual acrílica con moño",
-                    "Tarjeta caligrafiada incluida",
-                    "Entrega especial disponible"
+                    "Crema avellanas (+ $8)"
                 ]
             }
         };
@@ -853,61 +1419,121 @@
             message: ''
         };
 
-        // Abrir modal para ordenar
+        // Iniciar pedido
         function startOrder(productType) {
             currentProduct = productType;
             const product = products[productType];
             
-            // Configurar título
-            document.getElementById('modalTitle').textContent = `Ordenar ${product.title}`;
+            // Configurar el modal de pedido
+            document.getElementById('modalTitle').textContent = `Ordenar: ${product.title}`;
             document.getElementById('productName').value = product.title;
             
-            // Configurar sabores
-            const flavorOptions = document.getElementById('flavorOptions');
-            flavorOptions.innerHTML = product.flavors.map((flavor, index) => `
-                <div class="select-option" onclick="selectOption(this, 'flavor', '${flavor}')">
-                    ${flavor}
-                </div>
-            `).join('');
+            // Crear opciones de sabores
+            const flavorContainer = document.getElementById('flavorOptions');
+            flavorContainer.innerHTML = '';
+            product.flavors.forEach((flavor, index) => {
+                const option = document.createElement('div');
+                option.className = 'select-option';
+                option.textContent = flavor;
+                option.onclick = function() {
+                    selectOption(this, 'flavor', flavor);
+                };
+                flavorContainer.appendChild(option);
+            });
             
-            // Configurar rellenos
-            const fillingOptions = document.getElementById('fillingOptions');
-            fillingOptions.innerHTML = product.fillings.map((filling, index) => `
-                <div class="select-option" onclick="selectOption(this, 'filling', '${filling}')">
-                    ${filling}
-                </div>
-            `).join('');
-            
-            // Configurar fecha mínima
-            const today = new Date();
-            const minDate = new Date(today);
-            minDate.setDate(today.getDate() + 3);
-            const minDateStr = minDate.toISOString().split('T')[0];
-            
-            const dateInput = document.getElementById('deliveryDate');
-            dateInput.min = minDateStr;
-            
-            // Establecer fecha por defecto para 14 de febrero 2026
-            dateInput.value = '2026-02-14';
+            // Crear opciones de rellenos
+            const fillingContainer = document.getElementById('fillingOptions');
+            fillingContainer.innerHTML = '';
+            product.fillings.forEach((filling, index) => {
+                const option = document.createElement('div');
+                option.className = 'select-option';
+                option.textContent = filling;
+                option.onclick = function() {
+                    selectOption(this, 'filling', filling);
+                };
+                fillingContainer.appendChild(option);
+            });
             
             // Resetear datos
             resetOrderData();
             
-            // Mostrar modal
+            // Mostrar el modal
             const modal = new bootstrap.Modal(document.getElementById('orderModal'));
+            modal.show();
+            
+            ToastSystem.showToast('info', 'Selecciona tus opciones', 'Elige sabor, relleno y completa los datos');
+        }
+
+        // Abrir modal de detalles del producto
+        function openProductModal(productType) {
+            const product = products[productType];
+            const modalHtml = `
+                <div style="padding: 1rem;">
+                    <div class="text-center mb-4">
+                        <div class="product-price" style="font-size: 2.5rem; margin-bottom: 1rem;">${product.price}</div>
+                        <p style="color: var(--texto-claro); margin-bottom: 2rem;">${product.title}</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h6 style="color: var(--lila-oscuro); margin-bottom: 1rem; font-size: 1.1rem;">
+                            <i class="fas fa-info-circle me-2"></i>Información importante
+                        </h6>
+                        <div style="color: var(--texto-claro); font-size: 0.95rem;">
+                            <p><i class="fas fa-circle" style="font-size: 0.4rem; margin-right: 0.5rem;"></i>Pedidos con mínimo 72 horas de anticipación</p>
+                            <p><i class="fas fa-circle" style="font-size: 0.4rem; margin-right: 0.5rem;"></i>Disponibilidad sujeta a cupo limitado</p>
+                            <p><i class="fas fa-circle" style="font-size: 0.4rem; margin-right: 0.5rem;"></i>Se requiere confirmación para reservar</p>
+                            <p><i class="fas fa-circle" style="font-size: 0.4rem; margin-right: 0.5rem;"></i>Entrega en CDMX y área metropolitana</p>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-elegant w-100" onclick="startOrder('${productType}')">
+                        <i class="fas fa-shopping-cart"></i> Continuar con pedido
+                    </button>
+                </div>
+            `;
+            
+            // Crear modal temporal
+            const tempModal = `
+                <div class="modal fade" id="productDetailModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content" style="border-radius: var(--radio-xl);">
+                            <div class="modal-header">
+                                <h5 class="modal-title"><i class="fas fa-info-circle"></i> Detalles del Producto</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                ${modalHtml}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Si ya existe, removerlo
+            const existingModal = document.getElementById('productDetailModal');
+            if (existingModal) existingModal.remove();
+            
+            // Agregar nuevo modal
+            document.body.insertAdjacentHTML('beforeend', tempModal);
+            
+            // Mostrar modal
+            const modal = new bootstrap.Modal(document.getElementById('productDetailModal'));
+            modal.show();
+        }
+
+        // Abrir imagen en modal grande
+        function openImageModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            const modal = new bootstrap.Modal(document.getElementById('imageModal'));
             modal.show();
         }
 
         // Seleccionar opción
         function selectOption(element, type, value) {
-            // Remover selección previa
             const options = element.parentElement.querySelectorAll('.select-option');
             options.forEach(opt => opt.classList.remove('selected'));
-            
-            // Seleccionar nueva opción
             element.classList.add('selected');
             
-            // Guardar en orderData
             if (type === 'flavor') {
                 orderData.flavor = value;
             } else if (type === 'filling') {
@@ -925,7 +1551,7 @@
             orderData.quantity = value;
         }
 
-        // Resetear datos del pedido
+        // Resetear datos
         function resetOrderData() {
             orderData = {
                 product: currentProduct,
@@ -938,159 +1564,183 @@
                 message: ''
             };
             
-            // Resetear inputs
             document.getElementById('quantity').value = 1;
             document.getElementById('customerName').value = '';
             document.getElementById('customerPhone').value = '';
+            document.getElementById('deliveryDate').value = '';
             document.getElementById('personalMessage').value = '';
-            
-            // Resetear selecciones visuales
             document.querySelectorAll('.select-option').forEach(opt => {
                 opt.classList.remove('selected');
             });
         }
 
+        // Validar formulario
+        function validateForm() {
+            const name = document.getElementById('customerName').value.trim();
+            const phone = document.getElementById('customerPhone').value.trim();
+            const date = document.getElementById('deliveryDate').value;
+            
+            if (!name) {
+                ToastSystem.showToast('error', 'Campo requerido', 'Por favor ingresa tu nombre completo');
+                return false;
+            }
+            
+            if (!phone || phone.length < 10) {
+                ToastSystem.showToast('error', 'Teléfono inválido', 'Ingresa un número de teléfono válido');
+                return false;
+            }
+            
+            if (!date) {
+                ToastSystem.showToast('error', 'Fecha requerida', 'Selecciona una fecha de entrega');
+                return false;
+            }
+            
+            // Verificar que la fecha no sea pasada
+            const selectedDate = new Date(date);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
+            if (selectedDate < today) {
+                ToastSystem.showToast('error', 'Fecha inválida', 'Selecciona una fecha futura');
+                return false;
+            }
+            
+            if (!orderData.flavor) {
+                ToastSystem.showToast('error', 'Selección requerida', 'Por favor selecciona un sabor');
+                return false;
+            }
+            
+            if (!orderData.filling) {
+                ToastSystem.showToast('error', 'Selección requerida', 'Por favor selecciona un relleno');
+                return false;
+            }
+            
+            return true;
+        }
+
         // Enviar pedido por WhatsApp
         function submitOrder() {
-            const name = document.getElementById('customerName').value;
-            const phone = document.getElementById('customerPhone').value;
+            if (!validateForm()) return;
+            
+            const name = document.getElementById('customerName').value.trim();
+            const phone = document.getElementById('customerPhone').value.trim();
             const date = document.getElementById('deliveryDate').value;
-            const message = document.getElementById('personalMessage').value;
+            const message = document.getElementById('personalMessage').value.trim();
             const quantity = document.getElementById('quantity').value;
-            
-            // Validaciones
-            if (!name || !phone || !date) {
-                alert('Por favor completa todos los campos obligatorios.');
-                return;
-            }
-            
-            if (!orderData.flavor || !orderData.filling) {
-                alert('Por favor selecciona un sabor y un relleno.');
-                return;
-            }
             
             const product = products[currentProduct];
             
             // Calcular precio
             let unitPrice = product.basePrice;
-            if (currentProduct === 'cupcakes' && orderData.filling.includes('+')) {
+            if (currentProduct === 'cupcakes' && orderData.filling.includes('+ $8')) {
                 unitPrice = product.premiumPrice || 125;
             }
             
-            // Ajustar por extras
-            if (orderData.flavor.includes('+$5')) unitPrice += 5;
-            if (orderData.filling.includes('+$8')) unitPrice += 8;
+            if (orderData.flavor.includes('+ $5')) unitPrice += 5;
+            if (orderData.filling.includes('+ $8')) unitPrice += 8;
             
             const totalPrice = unitPrice * parseInt(quantity);
             
-            // Crear mensaje SIN emojis (solo iconos de texto)
-            const whatsappMessage = `HOLA SAYA PASTELERIA
-
-SOLICITO PEDIDO PARA EL 14 DE FEBRERO
+            // Formatear fecha
+            const deliveryDate = new Date(date);
+            const formattedDate = deliveryDate.toLocaleDateString('es-ES', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            // Crear mensaje para WhatsApp
+            const whatsappMessage = `✨ *NUEVO PEDIDO SAYA PASTELES - SAN VALENTÍN* ✨
 
 *PRODUCTO:* ${product.title}
 *CANTIDAD:* ${quantity} unidades
 *PRECIO UNITARIO:* $${unitPrice}
 *TOTAL APROXIMADO:* $${totalPrice}
 
-*SABOR SELECCIONADO:* ${orderData.flavor}
-*RELLENO SELECCIONADO:* ${orderData.filling}
-*FECHA DE ENTREGA:* ${date}
+*DETALLES DEL PEDIDO:*
+• *SABOR:* ${orderData.flavor}
+• *RELLENO:* ${orderData.filling}
+• *FECHA DE ENTREGA:* ${formattedDate}
+${message ? `• *MENSAJE PERSONAL:* ${message}` : ''}
 
-*MIS DATOS:*
-- NOMBRE: ${name}
-- TELEFONO: ${phone}
-${message ? `- MENSAJE PERSONAL: ${message}` : ''}
+*DATOS DEL CLIENTE:*
+• *NOMBRE:* ${name}
+• *TELÉFONO:* ${phone}
 
-POR FAVOR CONFIRMAR DISPONIBILIDAD Y PRECIO FINAL.
+📅 *Este pedido requiere confirmación de disponibilidad.*
+💰 *El precio final será confirmado por SAYA Pasteles.*
 
-GRACIAS`;
+*¿Aceptan este pedido?*`;
 
-            // Codificar mensaje para URL
+            // Codificar y enviar
             const encodedMessage = encodeURIComponent(whatsappMessage);
             const phoneNumber = '5513581184';
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
             
             // Abrir WhatsApp
-            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
             window.open(whatsappURL, '_blank');
             
-            // Cerrar modal
-            const modal = bootstrap.Modal.getInstance(document.getElementById('orderModal'));
-            modal.hide();
+            // Mostrar toast de éxito
+            ToastSystem.showToast('success', '¡Pedido listo!', 'Se abrirá WhatsApp para enviar tu pedido', 3000);
             
-            // Mostrar confirmación
+            // Cerrar modal después de un momento
             setTimeout(() => {
-                alert('Se abrirá WhatsApp para enviar tu pedido. Si no se abre, envía un mensaje al 55 1358 1184.');
-            }, 300);
+                const modal = bootstrap.Modal.getInstance(document.getElementById('orderModal'));
+                modal.hide();
+                resetOrderData();
+            }, 1500);
         }
 
         // Configurar botón WhatsApp global
         document.getElementById('whatsappButton').addEventListener('click', function(e) {
             e.preventDefault();
-            const defaultMessage = `HOLA SAYA PASTELERIA
+            const defaultMessage = `HOLA SAYA PASTELES 👋
 
 ESTOY INTERESADO/A EN SUS PRODUCTOS PARA EL 14 DE FEBRERO.
 
-POR FAVOR PODRIAN DARME MAS INFORMACION SOBRE DISPONIBILIDAD Y PRECIOS?
+¿PODRÍAN DARME MÁS INFORMACIÓN SOBRE:
+1. Disponibilidad de fechas
+2. Precios actualizados
+3. Opciones de personalización?
 
-GRACIAS`;
+¡GRACIAS! 🎂✨`;
 
             const encodedMessage = encodeURIComponent(defaultMessage);
             const phoneNumber = '5513581184';
             window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+            
+            ToastSystem.showToast('info', 'WhatsApp', 'Se abrirá WhatsApp para contactarnos', 2000);
         });
 
-        // Abrir modal de detalles (función alternativa)
-        function openProductModal(productType) {
-            const product = products[productType];
-            const details = product.details.join('\n• ');
+        // Configurar fecha mínima para entrega (3 días desde hoy)
+        function setMinDeliveryDate() {
+            const today = new Date();
+            const minDate = new Date(today);
+            minDate.setDate(today.getDate() + 3);
             
-            const modalContent = `
-                <h5>${product.title}</h5>
-                <p class="mt-3" style="color: var(--marron-claro);">${product.price}</p>
-                <div class="mt-4">
-                    <h6 style="font-size: 1rem; margin-bottom: 1rem;">Características:</h6>
-                    <div style="color: var(--marron-claro); font-size: 0.9rem;">
-                        ${product.details.map(d => `<p style="margin-bottom: 0.5rem;"><i class="fas fa-circle" style="font-size: 0.4rem; margin-right: 0.5rem;"></i>${d}</p>`).join('')}
-                    </div>
-                </div>
-            `;
+            const minDateStr = minDate.toISOString().split('T')[0];
+            document.getElementById('deliveryDate').min = minDateStr;
             
-            // Mostrar en alerta simple
-            const modal = new bootstrap.Modal(document.getElementById('orderModal'));
-            document.getElementById('modalTitle').textContent = product.title;
-            document.getElementById('orderForm').innerHTML = `
-                <div style="padding: 1rem; color: var(--marron-oscuro);">
-                    ${modalContent}
-                    <div class="mt-4">
-                        <button class="btn-minimal w-100" onclick="startOrder('${productType}')">
-                            <i class="fas fa-shopping-cart"></i> Continuar con pedido
-                        </button>
-                    </div>
-                </div>
-            `;
-            modal.show();
+            // Establecer fecha sugerida (7 días desde hoy)
+            const suggestedDate = new Date(today);
+            suggestedDate.setDate(today.getDate() + 7);
+            const suggestedDateStr = suggestedDate.toISOString().split('T')[0];
+            document.getElementById('deliveryDate').value = suggestedDateStr;
         }
 
-        // Inicializar animaciones
+        // Inicializar
         document.addEventListener('DOMContentLoaded', function() {
-            // Animar elementos al hacer scroll
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
+            createFloatingElements();
+            setMinDeliveryDate();
             
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
-                    }
-                });
-            }, observerOptions);
+            // Mostrar toast de bienvenida
+            setTimeout(() => {
+                ToastSystem.showToast('info', 'Bienvenido/a', 'Explora nuestra colección especial para San Valentín', 4000);
+            }, 1000);
             
-            document.querySelectorAll('.fade-in').forEach(el => {
-                observer.observe(el);
-            });
+            // Actualizar la fecha mínima cuando se abra el modal
+            document.getElementById('orderModal').addEventListener('show.bs.modal', setMinDeliveryDate);
         });
     </script>
 </body>
